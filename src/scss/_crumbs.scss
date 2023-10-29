@@ -1,0 +1,43 @@
+.crumbs {
+    margin-top: rem(10);
+    margin-bottom: rem(100);
+    // .crumbs__container
+    &__container {
+    }
+    // .crumbs__list
+    &__list {
+        display: flex;
+        gap: rem(30);
+    }
+    // .crumbs__item
+    &__item {
+        line-height: math.div(21, 15);
+        font-size: rem(15);
+        color: $mainColor;
+    }
+    // .crumbs__link
+    &__link {
+        color: $stroke;
+        position: relative;
+
+        @media (any-hover: hover){
+            &:hover{
+                color: $marsala;
+            }
+        }
+
+        &::after {
+            content: "";
+            width: rem(13);
+            height: rem(1);
+
+            position: absolute;
+            top: 50%;
+            right: rem(-21);
+            z-index: 1;
+            transform: translateY(-50%);
+
+            background-color: $marsala;
+        }
+    }
+}

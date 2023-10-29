@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Delivery"
+})
+
+<body class="home">
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <section class="content-page">
+                <div class="content-page__container">
+                    <div class="content-page__intro intro-page">
+                        <div class="intro-page__image">
+                            <img src="@img/delivery-intro.jpg" alt="">
+                        </div>
+                        <div class="intro-page__content">
+                            <h1 class="intro-page__title">Блог</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('html/_crumbs.htm',{
+            "title":"Доставка"
+            })
+            <section class="blog">
+                <div class="blog__container">
+                    <div class="blog__list">
+                        @@include('html/_blog-item.htm',{
+                        "title":"ЗИМНЕЕ НАСТРОЕНИЕ В МАНИКЮРЕ"
+                        })
+                        @@include('html/_blog-item.htm',{
+                        "title":"ЗИМНЕЕ НАСТРОЕНИЕ В МАНИКЮРЕ"
+                        })
+                        @@include('html/_blog-item.htm',{
+                        "title":"ЗИМНЕЕ НАСТРОЕНИЕ В МАНИКЮРЕ"
+                        })
+                        @@include('html/_blog-item.htm',{
+                        "title":"ЗИМНЕЕ НАСТРОЕНИЕ В МАНИКЮРЕ"
+                        })
+                        @@include('html/_blog-item.htm',{
+                        "title":"ЗИМНЕЕ НАСТРОЕНИЕ В МАНИКЮРЕ"
+                        })
+                        @@include('html/_blog-item.htm',{
+                        "title":"ЗИМНЕЕ НАСТРОЕНИЕ В МАНИКЮРЕ"
+                        })
+                    </div>
+                    <div class="blog__pagination pagination-blog">
+                        <a href="#" class="pagination-blog__prev">
+                            <svg>
+                                <use xlink:href="@img/icons/icons.svg#arr-left"></use>
+                            </svg>
+                        </a>
+                        <ul class="pagination-blog__list">
+                            <li class="pagination-blog__item">
+                                <a href="#" class="pagination-blog__link">1</a>
+                            </li>
+                            <li class="pagination-blog__item">
+                                <a href="#" class="pagination-blog__link">2</a>
+                            </li>
+                            <li class="pagination-blog__item">
+                                <a href="#" class="pagination-blog__link">3</a>
+                            </li>
+                            <li class="pagination-blog__item">4</li>
+                        </ul>
+                        <a href="#" class="pagination-blog__next">
+                            <svg>
+                                <use xlink:href="@img/icons/icons.svg#arr-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

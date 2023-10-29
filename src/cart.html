@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Product"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            @@include('html/_crumbs.htm',{
+            "title":"Корзина"
+            })
+            <section class="cart">
+                <div class="cart__container">
+                    <div class="cart__top top-cart">
+                        <div class="top-cart__left">
+                            <div class="top-cart__title">Ваш заказ</div>
+                            <div class="top-cart__count">
+                                <span>Количество товаров:</span>
+                                <span><strong>2</strong></span>
+                            </div>
+                        </div>
+                        <div class="top-cart__total">
+                            <span>Итого:</span>
+                            <span>932 ₽</span>
+                        </div>
+                    </div>
+                    <div class="cart__list">
+                        <div class="cart__item item-cart">
+                            <div class="item-cart__image">
+                                <img data-src="@img/productBig.png" alt="">
+                            </div>
+                            <a href="#" class="item-cart__title">Siller Bottle Gel №3, 15 мл pink rose</a>
+                            <div class="item-cart__price">
+                                <span>500 ₽</span>
+                                <del>555 ₽</del>
+                            </div>
+                            <div data-quantity class="item-cart__quantity quantity">
+                                <button data-quantity-minus type="button"
+                                    class="quantity__button quantity__button_minus"></button>
+                                <div class="quantity__input">
+                                    <input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+                                </div>
+                                <button data-quantity-plus type="button"
+                                    class="quantity__button quantity__button_plus"></button>
+                            </div>
+                            <div class="item-cart__total">
+                                <span>Сумма</span>
+                                <span class="_total">500 ₽</span>
+                            </div>
+                            <a href="#" class="item-cart__delete" title="Удалить товар">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                    fill="none">
+                                    <path d="M1.5 0.5L19.5 18.5" stroke="#04A29B" />
+                                    <path d="M19.5 0.5L1.5 18.5" stroke="#04A29B" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="cart__item item-cart">
+                            <div class="item-cart__image">
+                                <img data-src="@img/productBig.png" alt="">
+                            </div>
+                            <a href="#" class="item-cart__title">Builder Gel Nail Polish №6, 15 мл Fresh Black</a>
+                            <div class="item-cart__price">
+                                <span>500 ₽</span>
+                                <del>555 ₽</del>
+                            </div>
+                            <div data-quantity class="item-cart__quantity quantity">
+                                <button data-quantity-minus type="button"
+                                    class="quantity__button quantity__button_minus"></button>
+                                <div class="quantity__input">
+                                    <input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+                                </div>
+                                <button data-quantity-plus type="button"
+                                    class="quantity__button quantity__button_plus"></button>
+                            </div>
+                            <div class="item-cart__total">
+                                <span>Сумма</span>
+                                <span class="_total">500 ₽</span>
+                            </div>
+                            <a href="#" class="item-cart__delete" title="Удалить товар">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                    fill="none">
+                                    <path d="M1.5 0.5L19.5 18.5" stroke="#04A29B" />
+                                    <path d="M19.5 0.5L1.5 18.5" stroke="#04A29B" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart__actions actions-cart">
+                        <button type="button" class="actions-cart__checkout button js-checkout">Оформить заказ</button>
+                        <button type="button" class="actions-cart__oneclick button _marsala" data-popup="#oneclick">
+                            Купить в один клик
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="checkout">
+                <form class="checkout__container">
+                    <div class="checkout__step _step-1">
+                        <div class="checkout__title">
+                            <span>01</span>
+                            <span>Адрес доставки</span>
+                        </div>
+                        <div class="checkout__payment-type options">
+                            <div class="options__item">
+                                <input id="o_1" class="options__input" checked type="radio" value="1" name="option">
+                                <label for="o_1" class="options__label">
+                                    <span class="options__text">Физическое лицо</span>
+                                </label>
+                            </div>
+                            <div class="options__item">
+                                <input id="o_2" class="options__input" type="radio" value="2" name="option">
+                                <label for="o_2" class="options__label">
+                                    <span class="options__text">Юридическое лицо</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="checkout__rows">
+                            <div class="form__row _fw">
+                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                    placeholder="Адрес" class="input" />
+                            </div>
+                            <div class="form__row">
+                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                    placeholder="Страна" class="input">
+                            </div>
+                            <div class="form__row">
+                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                    placeholder="Город" class="input">
+                            </div>
+                            <div class="form__row">
+                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                    placeholder="Регион" class="input">
+                            </div>
+                            <div class="form__row">
+                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                    placeholder="Индекс" class="input">
+                            </div>
+                        </div>
+                        <div class="checkout__step-actions">
+                            <button type="button" class="prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                    fill="none">
+                                    <path
+                                        d="M3.14645 10.3536C2.95118 10.1583 2.95118 9.84171 3.14645 9.64645L6.32843 6.46447C6.52369 6.2692 6.84027 6.2692 7.03553 6.46447C7.2308 6.65973 7.2308 6.97631 7.03553 7.17157L4.20711 10L7.03553 12.8284C7.2308 13.0237 7.2308 13.3403 7.03553 13.5355C6.84027 13.7308 6.52369 13.7308 6.32843 13.5355L3.14645 10.3536ZM18.5 10.5L3.5 10.5L3.5 9.5L18.5 9.5L18.5 10.5Z"
+                                        fill="#666666" />
+                                </svg>
+                                <span>Назад</span>
+                            </button>
+                            <button type="button" class="next">
+                                <span>Далее</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                    fill="none">
+                                    <path
+                                        d="M18.8536 10.3536C19.0488 10.1583 19.0488 9.84171 18.8536 9.64645L15.6716 6.46447C15.4763 6.2692 15.1597 6.2692 14.9645 6.46447C14.7692 6.65973 14.7692 6.97631 14.9645 7.17157L17.7929 10L14.9645 12.8284C14.7692 13.0237 14.7692 13.3403 14.9645 13.5355C15.1597 13.7308 15.4763 13.7308 15.6716 13.5355L18.8536 10.3536ZM3.5 10.5L18.5 10.5L18.5 9.5L3.5 9.5L3.5 10.5Z"
+                                        fill="#04A29B" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="checkout__step _step-2">
+                        <div class="checkout__title">
+                            <span>02</span>
+                            <span>Покупатель</span>
+                        </div>
+                        <div class="checkout__rows">
+                            <div class="form__row">
+                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                    placeholder="Имя*" class="input">
+                            </div>
+                            <div class="form__row">
+                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                    placeholder="Фамилия*" class="input">
+                            </div>
+                            <div class="form__row">
+                                <input autocomplete="off" type="tel" name="form[]" data-error="Ошибка"
+                                    placeholder="Телефон*" class="input">
+                            </div>
+                            <div class="form__row">
+                                <input autocomplete="off" type="email" name="form[]" data-error="Ошибка"
+                                    placeholder="E-mail" class="input">
+                            </div>
+                        </div>
+                        <div class="checkout__step-actions">
+                            <button type="button" class="prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                    fill="none">
+                                    <path
+                                        d="M3.14645 10.3536C2.95118 10.1583 2.95118 9.84171 3.14645 9.64645L6.32843 6.46447C6.52369 6.2692 6.84027 6.2692 7.03553 6.46447C7.2308 6.65973 7.2308 6.97631 7.03553 7.17157L4.20711 10L7.03553 12.8284C7.2308 13.0237 7.2308 13.3403 7.03553 13.5355C6.84027 13.7308 6.52369 13.7308 6.32843 13.5355L3.14645 10.3536ZM18.5 10.5L3.5 10.5L3.5 9.5L18.5 9.5L18.5 10.5Z"
+                                        fill="#666666" />
+                                </svg>
+                                <span>Назад</span>
+                            </button>
+                            <button type="button" class="next">
+                                <span>Далее</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                    fill="none">
+                                    <path
+                                        d="M18.8536 10.3536C19.0488 10.1583 19.0488 9.84171 18.8536 9.64645L15.6716 6.46447C15.4763 6.2692 15.1597 6.2692 14.9645 6.46447C14.7692 6.65973 14.7692 6.97631 14.9645 7.17157L17.7929 10L14.9645 12.8284C14.7692 13.0237 14.7692 13.3403 14.9645 13.5355C15.1597 13.7308 15.4763 13.7308 15.6716 13.5355L18.8536 10.3536ZM3.5 10.5L18.5 10.5L18.5 9.5L3.5 9.5L3.5 10.5Z"
+                                        fill="#04A29B" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="checkout__step _step-3">
+                        <div class="checkout__title">
+                            <span>03</span>
+                            <span>Доставка</span>
+                        </div>
+                        <div class="checkout__rows">
+                            <select name="form[]" data-class-modif="form">
+                                <option value="1" selected>Пункт №1</option>
+                                <option value="2">Пункт №2</option>
+                                <option value="3">Пункт №3</option>
+                                <option value="4">Пункт №4</option>
+                            </select>
+                        </div>
+                        <div class="checkout__step-actions">
+                            <button type="button" class="prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                    fill="none">
+                                    <path
+                                        d="M3.14645 10.3536C2.95118 10.1583 2.95118 9.84171 3.14645 9.64645L6.32843 6.46447C6.52369 6.2692 6.84027 6.2692 7.03553 6.46447C7.2308 6.65973 7.2308 6.97631 7.03553 7.17157L4.20711 10L7.03553 12.8284C7.2308 13.0237 7.2308 13.3403 7.03553 13.5355C6.84027 13.7308 6.52369 13.7308 6.32843 13.5355L3.14645 10.3536ZM18.5 10.5L3.5 10.5L3.5 9.5L18.5 9.5L18.5 10.5Z"
+                                        fill="#666666" />
+                                </svg>
+                                <span>Назад</span>
+                            </button>
+                            <button type="button" class="next">
+                                <span>Далее</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                    fill="none">
+                                    <path
+                                        d="M18.8536 10.3536C19.0488 10.1583 19.0488 9.84171 18.8536 9.64645L15.6716 6.46447C15.4763 6.2692 15.1597 6.2692 14.9645 6.46447C14.7692 6.65973 14.7692 6.97631 14.9645 7.17157L17.7929 10L14.9645 12.8284C14.7692 13.0237 14.7692 13.3403 14.9645 13.5355C15.1597 13.7308 15.4763 13.7308 15.6716 13.5355L18.8536 10.3536ZM3.5 10.5L18.5 10.5L18.5 9.5L3.5 9.5L3.5 10.5Z"
+                                        fill="#04A29B" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="checkout__step _step-4">
+                        <div class="checkout__title">
+                            <span>04</span>
+                            <span>Оплата</span>
+                        </div>
+                        <div class="checkout__rows">
+                            <select name="form[]" data-class-modif="form">
+                                <option value="1" selected>Пункт №1</option>
+                                <option value="2">Пункт №2</option>
+                                <option value="3">Пункт №3</option>
+                                <option value="4">Пункт №4</option>
+                            </select>
+                        </div>
+                        <div class="checkout__step-actions">
+                            <button type="button" class="prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                    fill="none">
+                                    <path
+                                        d="M3.14645 10.3536C2.95118 10.1583 2.95118 9.84171 3.14645 9.64645L6.32843 6.46447C6.52369 6.2692 6.84027 6.2692 7.03553 6.46447C7.2308 6.65973 7.2308 6.97631 7.03553 7.17157L4.20711 10L7.03553 12.8284C7.2308 13.0237 7.2308 13.3403 7.03553 13.5355C6.84027 13.7308 6.52369 13.7308 6.32843 13.5355L3.14645 10.3536ZM18.5 10.5L3.5 10.5L3.5 9.5L18.5 9.5L18.5 10.5Z"
+                                        fill="#666666" />
+                                </svg>
+                                <span>Назад</span>
+                            </button>
+                            <button type="button" class="next">
+                                <span>Оформить заказ</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                    fill="none">
+                                    <path
+                                        d="M18.8536 10.3536C19.0488 10.1583 19.0488 9.84171 18.8536 9.64645L15.6716 6.46447C15.4763 6.2692 15.1597 6.2692 14.9645 6.46447C14.7692 6.65973 14.7692 6.97631 14.9645 7.17157L17.7929 10L14.9645 12.8284C14.7692 13.0237 14.7692 13.3403 14.9645 13.5355C15.1597 13.7308 15.4763 13.7308 15.6716 13.5355L18.8536 10.3536ZM3.5 10.5L18.5 10.5L18.5 9.5L3.5 9.5L3.5 10.5Z"
+                                        fill="#04A29B" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="checkout__policy">
+                            <p>Нажимая на кнопку «Оформить заказ»</p>
+                            <p>Вы соглашаетесь с <a href="policy.html">политикой конфиденциальности</a></p>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

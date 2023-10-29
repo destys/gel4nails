@@ -1,0 +1,34 @@
+.content-page {
+    margin-top: rem(20);
+    margin-bottom: rem(30);
+    // .content-page__container
+    &__container {
+        max-width: rem(1880);
+    }
+    // .content-page__intro
+    &__intro {
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
+.intro-page {
+    // .intro-page__image
+    &__image {}
+    // .intro-page__content
+    &__content {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: rem(1041);
+        height: rem(222);
+        text-align: center;
+    }
+    // .intro-page__title
+    &__title {
+        color: #fff;
+        text-transform: uppercase;
+    }
+}

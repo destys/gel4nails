@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body class="home">
+	<section class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="hero">
+				<div class="hero__bg">
+					<img src="@img/hero-bg.jpg" alt="">
+				</div>
+				<div class="hero__content">
+					<h1 class="hero__title">Российское производство<br> гелей для ногтей</h1>
+					<div class="hero__subtitle">Качество — предмет гордости нашей компании, в производстве используется
+						только европейское сырье</div>
+					<a href="catalog.html" class="hero__button button">Каталог товаров</a>
+				</div>
+			</section>
+			<section class="categories">
+				<div class="categories__container">
+					<h2 class="categories__title _section-title">Продукция</h2>
+					<div class="categories__list">
+						@@include('html/_category-item.htm',{
+						"image":"category-item.jpg",
+						"title":"База (каучуковая)"
+						})
+						@@include('html/_category-item.htm',{
+						"image":"category-item2.jpg",
+						"title":"Моделирующий гель"
+						})
+						@@include('html/_category-item.htm',{
+						"image":"category-item3.jpg",
+						"title":"База (твердая)"
+						})
+					</div>
+				</div>
+			</section>
+			<section class="clients">
+				<div class="clients__container">
+					<h2 class="clients__title _section-title">Наши друзья и преданные клиенты</h2>
+					<div class="clients__content">
+						<div class="clients__slider swiper">
+							<div class="clients__wrapper swiper-wrapper">
+								<div class="clients__slide slide-clients swiper-slide">
+									<div class="slide-clients__image">
+										<img data-src="@img/clients/photo1.jpg" alt="">
+									</div>
+									<div class="slide-clients__name">ИВАН ИВАНОВ</div>
+									<div class="slide-clients__postion">Руководитель ООО “Биметта”</div>
+									<div class="slide-clients__signature">
+										<img src="@img/clients/signature1.png" alt="">
+									</div>
+								</div>
+								<div class="clients__slide slide-clients swiper-slide">
+									<div class="slide-clients__image">
+										<img data-src="@img/clients/photo1.jpg" alt="">
+									</div>
+									<div class="slide-clients__name">ИВАН ИВАНОВ</div>
+									<div class="slide-clients__postion">Руководитель ООО “Биметта”</div>
+									<div class="slide-clients__signature">
+										<img src="@img/clients/signature1.png" alt="">
+									</div>
+								</div>
+								<div class="clients__slide slide-clients swiper-slide">
+									<div class="slide-clients__image">
+										<img data-src="@img/clients/photo1.jpg" alt="">
+									</div>
+									<div class="slide-clients__name">ИВАН ИВАНОВ</div>
+									<div class="slide-clients__postion">Руководитель ООО “Биметта”</div>
+									<div class="slide-clients__signature">
+										<img src="@img/clients/signature1.png" alt="">
+									</div>
+								</div>
+								<div class="clients__slide slide-clients swiper-slide">
+									<div class="slide-clients__image">
+										<img data-src="@img/clients/photo1.jpg" alt="">
+									</div>
+									<div class="slide-clients__name">ИВАН ИВАНОВ</div>
+									<div class="slide-clients__postion">Руководитель ООО “Биметта”</div>
+									<div class="slide-clients__signature">
+										<img src="@img/clients/signature1.png" alt="">
+									</div>
+								</div>
+								<div class="clients__slide slide-clients swiper-slide">
+									<div class="slide-clients__image">
+										<img data-src="@img/clients/photo1.jpg" alt="">
+									</div>
+									<div class="slide-clients__name">ИВАН ИВАНОВ</div>
+									<div class="slide-clients__postion">Руководитель ООО “Биметта”</div>
+									<div class="slide-clients__signature">
+										<img src="@img/clients/signature1.png" alt="">
+									</div>
+								</div>
+								<div class="clients__slide slide-clients swiper-slide">
+									<div class="slide-clients__image">
+										<img data-src="@img/clients/photo1.jpg" alt="">
+									</div>
+									<div class="slide-clients__name">ИВАН ИВАНОВ</div>
+									<div class="slide-clients__postion">Руководитель ООО “Биметта”</div>
+									<div class="slide-clients__signature">
+										<img src="@img/clients/signature1.png" alt="">
+									</div>
+								</div>
+								<div class="clients__slide slide-clients swiper-slide">
+									<div class="slide-clients__image">
+										<img data-src="@img/clients/photo1.jpg" alt="">
+									</div>
+									<div class="slide-clients__name">ИВАН ИВАНОВ</div>
+									<div class="slide-clients__postion">Руководитель ООО “Биметта”</div>
+									<div class="slide-clients__signature">
+										<img src="@img/clients/signature1.png" alt="">
+									</div>
+								</div>
+								<div class="clients__slide slide-clients swiper-slide">
+									<div class="slide-clients__image">
+										<img data-src="@img/clients/photo1.jpg" alt="">
+									</div>
+									<div class="slide-clients__name">ИВАН ИВАНОВ</div>
+									<div class="slide-clients__postion">Руководитель ООО “Биметта”</div>
+									<div class="slide-clients__signature">
+										<img src="@img/clients/signature1.png" alt="">
+									</div>
+								</div>
+								<div class="clients__slide slide-clients swiper-slide">
+									<div class="slide-clients__image">
+										<img data-src="@img/clients/photo1.jpg" alt="">
+									</div>
+									<div class="slide-clients__name">ИВАН ИВАНОВ</div>
+									<div class="slide-clients__postion">Руководитель ООО “Биметта”</div>
+									<div class="slide-clients__signature">
+										<img src="@img/clients/signature1.png" alt="">
+									</div>
+								</div>
+								<div class="clients__slide slide-clients swiper-slide">
+									<div class="slide-clients__image">
+										<img data-src="@img/clients/photo1.jpg" alt="">
+									</div>
+									<div class="slide-clients__name">ИВАН ИВАНОВ</div>
+									<div class="slide-clients__postion">Руководитель ООО “Биметта”</div>
+									<div class="slide-clients__signature">
+										<img src="@img/clients/signature1.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clients__nav">
+							<button type="button" class="prev">
+								<svg>
+									<use xlink:href="@img/icons/icons.svg#arr-left"></use>
+								</svg>
+							</button>
+							<button type="button" class="next">
+								<svg>
+									<use xlink:href="@img/icons/icons.svg#arr-right"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			@@include('html/_listing.htm',{
+			"title":"Популярные товары"
+			})
+			<section class="cases">
+				<div class="cases__container">
+					<h2 class="cases__title _section-title">работы на наших материалах</h2>
+					<div class="cases__list" data-gallery>
+						<a href="@img/cases/case1.jpg" class="cases__item">
+							<img src="@img/cases/case1.jpg" alt="">
+						</a>
+						<a href="@img/cases/case2.jpg" class="cases__item">
+							<img src="@img/cases/case2.jpg" alt="">
+						</a>
+						<a href="@img/cases/case3.jpg" class="cases__item">
+							<img src="@img/cases/case3.jpg" alt="">
+						</a>
+						<a href="@img/cases/case4.jpg" class="cases__item">
+							<img src="@img/cases/case4.jpg" alt="">
+						</a>
+						<a href="@img/cases/case5.jpg" class="cases__item">
+							<img src="@img/cases/case5.jpg" alt="">
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="about-info">
+				<div class="about-info__container">
+					<div class="about-info__line _section-title"></div>
+					<div class="about-info__wrapper">
+						<div class="about-info__image">
+							<img data-src="@img/about-info.jpg" alt="">
+						</div>
+						<div class="empty"></div>
+						<div class="about-info__content">
+							<div class="about-info__item">
+								<h3 class="about-info__title">Gel 4 nails</h3>
+								<div class="about-info__text">Лидер среди магазинов профессиональной косметики России и
+									Европы.</div>
+							</div>
+							<div class="about-info__item">
+								<h3 class="about-info__title">Наша миссия</h3>
+								<div class="about-info__text">Обеспечить необходимым материалом в любом количестве
+									каждого бьюти-мастера от начинающего до профи.</div>
+							</div>
+							<div class="about-info__item">
+								<h3 class="about-info__title">История «Gel 4 nails»</h3>
+								<div class="about-info__text">Началась в 2012 году с небольшого офиса, сейчас – это
+									преуспевающая франчайзинговая сеть, в структуре которой большой мульти-вендорный
+									интернет-магазин, пять розничных магазина - в Москве, Ростове-На-Дону и
+									Санки-Питербурге, салон красоты и школа по обучению мастеров Gel 4 nails School. Во
+									всей структуре сети работает более 200 сотрудников.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="factory">
+				<div class="factory__container">
+					<div class="factory__left">
+						<div class="factory__item item-factory">
+							<h3 class="item-factory__title">ГЕЛЕВЫЕ МАТЕРИАЛЫ</h3>
+							<div class="item-factory__text">ОТ ОДНОГО ДО ПЯТИ ДНЕЙ</div>
+						</div>
+						<div class="factory__item item-factory">
+							<h3 class="item-factory__title">КОЛОРИСТИКА</h3>
+							<div class="item-factory__text">ОТ ОДНОГО ДО ДЕСЯТИ ДНЕЙ <br>
+								В ЗАВИСИМОСТИ ОТ КОЛИЧЕСТВА ТОНОВ</div>
+						</div>
+						<div class="factory__item item-factory">
+							<h3 class="item-factory__title">ФАСОВКА И СТИКЕРОВКА</h3>
+							<div class="item-factory__text">ОТ 500 ШТУК В ДЕНЬ</div>
+						</div>
+						<div class="factory__item item-factory">
+							<h3 class="item-factory__title">СОПУТСТВУЮЩИЕ </h3>
+							<div class="item-factory__text">ДО 200 ЛИТРОВ В ДЕНЬ</div>
+						</div>
+					</div>
+					<div class="factory__image">
+						<img data-src="@img/factory-image.jpg" alt="factory-image">
+					</div>
+				</div>
+			</section>
+			@@include('html/_listing.htm',{
+			"title":"Популярные цвета" 
+			})
+			<section class="partners">
+				<div class="partners__container">
+					<button class="partners__prev">
+						<svg>
+							<use xlink:href="@img/icons/icons.svg#arr-left"></use>
+						</svg>
+					</button>
+					<div class="partners__slider swiper">
+						<div class="partners__wrapper swiper-wrapper">
+							<div class="partners__slide swiper-slide">
+								<img src="@img/brands/brand1.png" alt="">
+							</div>
+							<div class="partners__slide swiper-slide">
+								<img src="@img/brands/brand2.png" alt="">
+							</div>
+							<div class="partners__slide swiper-slide">
+								<img src="@img/brands/brand3.png" alt="">
+							</div>
+							<div class="partners__slide swiper-slide">
+								<img src="@img/brands/brand4.png" alt="">
+							</div>
+							<div class="partners__slide swiper-slide">
+								<img src="@img/brands/brand5.png" alt="">
+							</div>
+							<div class="partners__slide swiper-slide">
+								<img src="@img/brands/brand6.png" alt="">
+							</div>
+							<div class="partners__slide swiper-slide">
+								<img src="@img/brands/brand7.png" alt="">
+							</div>
+							<div class="partners__slide swiper-slide">
+								<img src="@img/brands/brand1.png" alt="">
+							</div>
+							<div class="partners__slide swiper-slide">
+								<img src="@img/brands/brand2.png" alt="">
+							</div>
+							<div class="partners__slide swiper-slide">
+								<img src="@img/brands/brand3.png" alt="">
+							</div>
+							<div class="partners__slide swiper-slide">
+								<img src="@img/brands/brand4.png" alt="">
+							</div>
+							<div class="partners__slide swiper-slide">
+								<img src="@img/brands/brand5.png" alt="">
+							</div>
+							<div class="partners__slide swiper-slide">
+								<img src="@img/brands/brand6.png" alt="">
+							</div>
+							<div class="partners__slide swiper-slide">
+								<img src="@img/brands/brand7.png" alt="">
+							</div>
+						</div>
+					</div>
+					<button class="partners__next">
+						<svg>
+							<use xlink:href="@img/icons/icons.svg#arr-right"></use>
+						</svg>
+					</button>
+				</div>
+			</section>
+			<section class="why">
+				<div class="why__container">
+					<h2 class="why__title _section-title">Почему именно мы?</h2>
+					<div class="why__list">
+						<div class="why__item item-why">
+							<div class="item-why__count">01</div>
+							<h3 class="item-why__title">Самый широкий <br>
+								ассортимент На рынке</h3>
+							<div class="item-why__text">Более 4500 брендов и 249 000 товаров — наша команда знает, что
+								актуально именно сегодня и появление каких брендов повлечет за собой ажиотаж у настоящих
+								ценителей ногтевого исскуства.</div>
+						</div>
+						<div class="why__item item-why">
+							<div class="item-why__count">02</div>
+							<h3 class="item-why__title">Официальное партнерство <br>
+								с топ-брендами</h3>
+							<div class="item-why__text">«Gel 4 nails» авторизован и работает по прямым контрактам с
+								крупнейшими luxe-брендами. Мы гордимся, что сотрудничаем с официальными поставщиками и
+								предлагаем исключительно оригинальные товары.</div>
+						</div>
+						<div class="why__item item-why">
+							<div class="item-why__count">03</div>
+							<h3 class="item-why__title">Шоппинг с комфортом</h3>
+							<div class="item-why__text">Современная система контроля цен, мониторинг актуальных новинок
+								и мегаудобная доставка позволят вам наслаждаться покупками, сохраняя время для более
+								важных дел.</div>
+						</div>
+						<div class="why__item item-why">
+							<div class="item-why__count">04</div>
+							<h3 class="item-why__title">Заботимся о будущем</h3>
+							<div class="item-why__text">Мы заботимся о будущем планеты и постоянно работаем над
+								проектами по переработке и сознательному потреблению. Мы отказались от использования
+								полиэтилена для упаковки посылок, заменив его на бумагу, которая, как и наши брендовые
+								коробки, подлежит переработке.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('html/_callback.htm',{})
+		</main>
+		@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+</body>
+
+</html>

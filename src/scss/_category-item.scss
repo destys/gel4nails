@@ -1,0 +1,43 @@
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // .category__image
+    &__image {
+        margin-bottom: rem(35);
+        position: relative;
+
+        img {
+            border-radius: 20px;
+        }
+
+        ._count {
+            position: absolute;
+            bottom: rem(20);
+            left: 50%;
+            transform: translateX(-50%);
+
+            padding: rem(4) rem(10);
+            border-radius: 60px;
+            background: $mainColor;
+            font-size: rem(18);
+            color: #fff;
+        }
+    }
+    // .category__title
+    &__title {
+        margin-bottom: rem(8);
+
+        line-height: math.div(42, 22);
+        font-weight: 400;
+        font-size: rem(22);
+        text-align: center;
+        text-transform: uppercase;
+    }
+    // .category__excerpt
+    &__excerpt {
+        color: $gray-text;
+        text-align: center;
+    }
+}

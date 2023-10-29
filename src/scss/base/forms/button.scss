@@ -1,0 +1,42 @@
+//<BUTTONS (a.btn+tab)>
+// Сниппет (HTML): btn
+
+.button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: rem(10);
+
+	padding: rem(20) rem(30);
+	border: 1px solid;
+
+	font-size: rem(14);
+	text-transform: uppercase;
+
+	transition:
+		border-color 0.2s ease-in-out,
+		background 0.2s ease-in-out,
+		color 0.2s ease-in-out;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $mainColor;
+			border-color: $mainColor;
+			color: #fff;
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+	&._marsala {
+		border-color: $marsala;
+		color: $marsala;
+
+		@media (any-hover: hover){
+			&:hover{
+				background-color: $marsala;
+				color: #fff;
+			}
+		}
+	}
+}

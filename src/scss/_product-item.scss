@@ -1,0 +1,104 @@
+.product-item {
+    // .product-item__flags
+    &__flags {
+    }
+    // .product-item__slider
+    &__slider {
+        margin-bottom: rem(30);
+        border-radius: 20px;
+        border: 1px solid $stroke;
+    }
+    // .product-item__wrapper
+    &__wrapper {
+    }
+    // .product-item__slide
+    &__slide {
+        padding: rem(60);
+        height: rem(407);
+    }
+    // .product-item__pagination
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        gap: rem(5);
+
+        margin-bottom: rem(25);
+
+        .swiper-pagination-bullet {
+            flex: 0 0 rem(25);
+            height: rem(2);
+            background-color: $stroke;
+
+            &-active {
+                flex: 0 0 rem(30);
+                background-color: $mainColor;
+            }
+        }
+    }
+    // .product-item__content
+    &__content {
+        padding: 0 rem(20);
+    }
+
+    // .product-item__title
+    &__title {
+        @extend %h6;
+        margin-bottom: rem(20);
+        max-width: 90%;
+        text-transform: uppercase;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $marsala;
+            }
+        }
+    }
+    // .product-item__colors-title
+    &__colors-title {
+    }
+    // .product-item__colors
+    &__colors {
+        margin-bottom: rem(20);
+    }
+    // .product-item__footer
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+.footer-product {
+    // .footer-product__price
+    &__price {
+        .price {
+            font-weight: 500;
+            font-size: rem(32);
+        }
+        .old-price {
+            @extend %h6;
+            margin-left: rem(20);
+            color: $stroke;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 2px;
+                background-color: $marsala;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                z-index: 1;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    // .footer-product__add-to-cart
+    &__add-to-cart {
+        @media (any-hover: hover) {
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}

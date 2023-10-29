@@ -1,0 +1,125 @@
+.checkout {
+    // .checkout__container
+    &__container {
+        max-width: rem(870);
+    }
+    // .checkout__step
+    &__step {
+        // ._step-1
+        &._step-1 {
+        }
+        // ._step-2
+        &._step-2 {
+        }
+        // ._step-3
+        &._step-3 {
+        }
+        // ._step-4
+        &._step-4 {
+        }
+    }
+    // .checkout__title
+    &__title {
+        @extend %h4;
+        display: flex;
+        gap: rem(15);
+        margin-bottom: rem(45);
+        text-transform: uppercase;
+        span {
+            &:first-child {
+                color: $marsala;
+            }
+        }
+    }
+    // .checkout__payment-type
+    &__payment-type {
+        margin-bottom: rem(45);
+        flex-direction: row;
+        gap: rem(10);
+        .options {
+            // .options__item
+            &__item {
+            }
+            // .options__input
+            &__input {
+                &:checked + label {
+                    background-color: $marsala;
+                    color: #fff;
+                }
+            }
+            // .options__label
+            &__label {
+                padding: rem(7) rem(25);
+                border: 1px solid $marsala;
+                border-radius: 60px;
+
+                &::before,
+                &::after {
+                    content: none;
+                }
+            }
+            // .options__color
+            &__color {
+            }
+            // .options__text
+            &__text {
+            }
+        }
+    }
+    // .checkout__rows
+    &__rows {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: rem(10);
+
+        margin-bottom: rem(45);
+
+        .select {
+            grid-column: span 4;
+        }
+    }
+    // .checkout__step-actions
+    &__step-actions {
+        display: flex;
+        justify-content: space-between;
+        gap: rem(10);
+
+        .prev,
+        .next {
+            display: flex;
+            align-items: center;
+            gap: rem(10);
+            padding: rem(20) rem(30);
+
+            line-height: math.div(26, 14);
+            font-size: rem(14);
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+        }
+        .prev {
+            padding-left: 0;
+            color: $gray-text;
+        }
+        .next {
+            border: 1px solid $stroke;
+        }
+    }
+    // .checkout__policy
+    &__policy {
+        margin-top: rem(20);
+        text-align: right;
+    }
+
+    .form {
+        // .form__row
+        &__row {
+            &._fw {
+                grid-column: span 4;
+            }
+
+            .input {
+                border-radius: 5px;
+            }
+        }
+    }
+}

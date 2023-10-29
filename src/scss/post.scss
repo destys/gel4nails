@@ -1,0 +1,120 @@
+.post {
+    // .post__container
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: rem(20);
+    }
+    // .post__content
+    &__content {
+        grid-column: span 8;
+
+        h2 {
+            margin: rem(100) 0 rem(45);
+            text-transform: uppercase;
+        }
+
+        h3 {
+            @extend %h3;
+            margin: rem(70) 0 rem(45);
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-bottom: rem(30);
+            color: $gray-text;
+        }
+
+        table {
+            width: 100%;
+            border: none;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+        table thead th {
+            font-weight: bold;
+            text-align: left;
+            border: none;
+            padding: 10px 15px;
+            background: $marsala;
+            font-size: 14px;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            color: #fff;
+        }
+        table tbody td {
+            text-align: left;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            padding: 10px 15px;
+            font-size: 14px;
+            vertical-align: top;
+        }
+        table thead tr th:first-child,
+        table tbody tr td:first-child {
+            border-left: none;
+        }
+        table thead tr th:last-child,
+        table tbody tr td:last-child {
+            border-right: none;
+        }
+        table tbody tr:nth-child(even) {
+            background: #f3f3f3;
+        }
+
+        ul {
+            li {
+                display: flex;
+                gap: rem(15);
+
+                color: $gray-text;
+
+                &:not(:last-child) {
+                    margin-bottom: rem(30);
+                }
+
+                &::before {
+                    content: "";
+                    margin-top: rem(11);
+                    flex: 0 0 rem(7);
+                    width: rem(7);
+                    height: rem(7);
+                    border-radius: 50%;
+                    background-color: $marsala;
+
+                    position: relative;
+                    z-index: 2;
+                }
+
+                &:nth-child(2) {
+                    &::before {
+                        background-color: $pink;
+                    }
+                }
+                &:nth-child(3) {
+                    &::before {
+                        background-color: #eac44e;
+                    }
+                }
+                &:nth-child(4) {
+                    &::before {
+                        background-color: #e0803b;
+                    }
+                }
+
+                strong {
+                    margin-right: rem(-10);
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+    // .post__similar
+    &__similar {
+        grid-column: span 3;
+
+        .blog-item {
+            margin-bottom: rem(20);
+        }
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Delivery"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <section class="error-page">
+                <div class="error-page__container">
+                    <div class="error-page__image">
+                        <img src="@img/404.jpg" alt="404">
+                    </div>
+                    <div class="error-page__text">Неправильно набран адрес, или такой страницы больше не существует
+                    </div>
+                    <a href="home.html" class="error-page__button button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                            <path
+                                d="M2.64645 10.8536C2.45118 10.6583 2.45118 10.3417 2.64645 10.1464L5.82843 6.96447C6.02369 6.7692 6.34027 6.7692 6.53553 6.96447C6.7308 7.15973 6.7308 7.47631 6.53553 7.67157L3.70711 10.5L6.53553 13.3284C6.7308 13.5237 6.7308 13.8403 6.53553 14.0355C6.34027 14.2308 6.02369 14.2308 5.82843 14.0355L2.64645 10.8536ZM18 11L3 11L3 10L18 10L18 11Z"
+                                fill="#04A29B" />
+                        </svg>
+                        <span>Вернуться на главную</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

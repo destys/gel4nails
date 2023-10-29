@@ -1,0 +1,14 @@
+.listing {
+    // .listing__container
+    &__container {}
+    // .listing__title
+    &__title {}
+    // .listing__slider
+    &__slider {}
+    // .listing__wrapper
+    &__wrapper {
+        padding-bottom: rem(5);
+    }
+    // .listing__slide
+    &__slide {}
+}

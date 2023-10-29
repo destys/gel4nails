@@ -1,0 +1,92 @@
+.blog {
+    // .blog__container
+    &__container {
+    }
+    // .blog__list
+    &__list {
+        @include gridCards("fill", rem(375), 1fr, rem(45) rem(20));
+        margin-bottom: rem(100);
+    }
+    // .blog__pagination
+    &__pagination {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(20);
+        overflow: hidden;
+    }
+}
+.pagination-blog {
+    &__prev,
+    &__next {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: rem(15);
+        flex: 0 0 rem(60);
+        width: rem(60);
+        height: rem(60);
+
+        border-radius: 50%;
+
+        background-color: $mainColor;
+
+        transition: background 0.2s ease-in-out;
+
+        svg {
+            fill: #fff;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    // .pagination-blog__prev
+    &__prev {
+    }
+    // .pagination-blog__list
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: rem(10);
+    }
+    // .pagination-blog__item
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex: 0 0 rem(60);
+        width: rem(60);
+        height: rem(60);
+
+        border: 1px solid $stroke;
+        border-radius: 50%;
+
+        background-color: $marsala;
+        color: #fff;
+    }
+    // .pagination-blog__link
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #fff;
+        color: $gray-text;
+
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $marsala;
+                color: #fff;
+            }
+        }
+    }
+    // .pagination-blog__next
+    &__next {
+    }
+}

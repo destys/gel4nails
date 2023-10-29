@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Catalog"
+})
+
+<body>
+	<section class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			@@include('html/_crumbs.htm',{
+			"title":"Каталог"
+			})
+			<section class="catalog">
+				<div class="catalog__container">
+					<h1 class="catalog__title">Каталог</h1>
+					<div class="catalog__categories categories-catalog">
+						<a href="#" class="categories-catalog__item item-categories _current">
+							<div class="item-categories__image">
+								<img src="@img/categories/category1.png" alt="">
+							</div>
+							<div class="item-categories__title">Все товары</div>
+						</a>
+						<a href="#" class="categories-catalog__item item-categories ">
+							<div class="item-categories__image">
+								<img src="@img/categories/category2.png" alt="">
+							</div>
+							<div class="item-categories__title">Моделирующий гель</div>
+						</a>
+						<a href="#" class="categories-catalog__item item-categories ">
+							<div class="item-categories__image">
+								<img src="@img/categories/category3.png" alt="">
+							</div>
+							<div class="item-categories__title">База (каучуковая)</div>
+						</a>
+						<a href="#" class="categories-catalog__item item-categories ">
+							<div class="item-categories__image">
+								<img src="@img/categories/category4.png" alt="">
+							</div>
+							<div class="item-categories__title">База (твердая)</div>
+						</a>
+					</div>
+					<div data-spollers class="catalog__filters filters-catalog spollers">
+						<details class="filters-catalog__item item-filters spollers__item">
+							<summary class="spollers__title">Тип</summary>
+							<div class="spollers__body">
+								<div class="item-filters__list">
+									<div class="checkbox">
+										<input id="c_11" data-error="Ошибка" class="checkbox__input" type="checkbox"
+											value="1" name="form[]">
+										<label for="c_11" class="checkbox__label"><span
+												class="checkbox__text">База</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="c_12" data-error="Ошибка" class="checkbox__input" type="checkbox"
+											value="1" name="form[]">
+										<label for="c_12" class="checkbox__label"><span
+												class="checkbox__text">Гель</span></label>
+									</div>
+								</div>
+							</div>
+						</details>
+						<details class="filters-catalog__item item-filters spollers__item">
+							<summary class="spollers__title">Цвет</summary>
+							<div class="spollers__body">
+								<div class="item-filters__list">
+									<div class="checkbox">
+										<input id="c_21" data-error="Ошибка" class="checkbox__input" type="checkbox"
+											value="1" name="form[]">
+										<label for="c_21" class="checkbox__label"><span
+												class="checkbox__text">Прозрачный</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="c_22" data-error="Ошибка" class="checkbox__input" type="checkbox"
+											value="1" name="form[]">
+										<label for="c_22" class="checkbox__label"><span
+												class="checkbox__text">Зеленый</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="c_22" data-error="Ошибка" class="checkbox__input" type="checkbox"
+											value="1" name="form[]">
+										<label for="c_22" class="checkbox__label"><span
+												class="checkbox__text">Коричневый</span></label>
+									</div>
+								</div>
+							</div>
+						</details>
+						<details class="filters-catalog__item item-filters spollers__item">
+							<summary class="spollers__title">Объем</summary>
+							<div class="spollers__body">
+								<div class="item-filters__list">
+									<div class="checkbox">
+										<input id="c_31" data-error="Ошибка" class="checkbox__input" type="checkbox"
+											value="1" name="form[]">
+										<label for="c_31" class="checkbox__label"><span class="checkbox__text">500	
+												г</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="c_32" data-error="Ошибка" class="checkbox__input" type="checkbox"
+											value="1" name="form[]">
+										<label for="c_32" class="checkbox__label"><span class="checkbox__text">1 кг</span></label>
+									</div>
+								</div>
+							</div>
+						</details>
+					</div>
+					<div class="catalog__list">
+						@@include('html/_product-item.htm',{
+						"title":"Siller Bottle Gel №3, 15мл pink ROse",
+						"letter":"b"
+						})
+						@@include('html/_product-item.htm',{
+						"title":"Siller Bottle Gel №3, 15мл pink ROse",
+						"letter":"b"
+						})
+						@@include('html/_product-item.htm',{
+						"title":"Siller Bottle Gel №3, 15мл pink ROse",
+						"letter":"b"
+						})
+						@@include('html/_product-item.htm',{
+						"title":"Siller Bottle Gel №3, 15мл pink ROse",
+						"letter":"b"
+						})
+						@@include('html/_product-item.htm',{
+						"title":"Siller Bottle Gel №3, 15мл pink ROse",
+						"letter":"b"
+						})
+						@@include('html/_product-item.htm',{
+						"title":"Siller Bottle Gel №3, 15мл pink ROse",
+						"letter":"b"
+						})
+						@@include('html/_product-item.htm',{
+						"title":"Siller Bottle Gel №3, 15мл pink ROse",
+						"letter":"b"
+						})
+						@@include('html/_product-item.htm',{
+						"title":"Siller Bottle Gel №3, 15мл pink ROse",
+						"letter":"b"
+						})
+						@@include('html/_product-item.htm',{
+						"title":"Siller Bottle Gel №3, 15мл pink ROse",
+						"letter":"b"
+						})
+						@@include('html/_product-item.htm',{
+						"title":"Siller Bottle Gel №3, 15мл pink ROse",
+						"letter":"b"
+						})
+					</div>
+					<ul class="catalog__pagination pagination-catalog">
+						<li class="pagination-catalog__item _current">
+							1
+						</li>
+						<li class="pagination-catalog__item">
+							<a href="#" class="pagination-catalog__link">2</a>
+						</li>
+						<li class="pagination-catalog__item">
+							<a href="#" class="pagination-catalog__link">3</a>
+						</li>
+						<li class="pagination-catalog__item">
+							<a href="#" class="pagination-catalog__link">4</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+</body>
+
+</html>

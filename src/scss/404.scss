@@ -1,0 +1,21 @@
+.error-page {
+    margin-top: rem(100);
+    // .error-page__container
+    &__container {
+        max-width: rem(678);
+        text-align: center;
+    }
+    // .error-page__image
+    &__image {
+        margin-bottom: rem(60);
+        padding: 0 rem(42);
+    } 
+    // .error__text
+    &__text {
+        margin-bottom: rem(30);
+        color: $gray-text;
+    }
+    // .error-page__button
+    &__button {
+    }
+}

@@ -1,0 +1,130 @@
+.catalog {
+    // .catalog__container
+    &__container {
+    }
+    // .catalog__title
+    &__title {
+        margin-bottom: rem(70);
+        text-transform: uppercase;
+    }
+    // .catalog__categories
+    &__categories {
+        @include gridCards("fill", rem(320), 1fr);
+
+        margin-bottom: rem(70);
+    }
+    // .catalog__filters
+    &__filters {
+        @include gridCards("fill", rem(250), 1fr, rem(20));
+        margin-bottom: rem(70);
+        .spollers {
+            // .spollers__item
+            &__item {
+            }
+            // .spollers__title
+            &__title {
+            }
+            // .spollers__body
+            &__body {
+            }
+        }
+    }
+    // .catalog__list
+    &__list {
+        @include gridCards("fill", rem(350), 1fr, rem(100) rem(20));
+        margin-bottom: rem(100);
+    }
+    // .catalog__pagination
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(10);
+    }
+}
+.categories-catalog {
+    // .categories-catalog__item
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: rem(32);
+        height: rem(92);
+        border-radius: 60px;
+        background-color: $bg;
+        overflow: hidden;
+
+        transition: background 0.2s ease-in-out;
+
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: darken($bg, 10);
+            }
+        }
+
+        &._current {
+            background-color: $marsala;
+            color: #fff;
+        }
+    }
+}
+.item-categories {
+    // .item-categories__image
+    &__image {
+        flex: 0 0 rem(92);
+        height: rem(92);
+    }
+    // .item-categories__title
+    &__title {
+        font-size: rem(18);
+    }
+}
+.filters-catalog {
+    // .filters-catalog__item
+    &__item {
+    }
+}
+.item-filters {
+    // .item-filters__list
+    &__list {
+    }
+}
+.pagination-catalog {
+    // .pagination-catalog__item
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex: 0 0 rem(60);
+        width: rem(60);
+        height: rem(60);
+
+        border: 1px solid $stroke;
+        border-radius: 50%;
+
+        color: $gray-text;
+
+        transition: background 0.2s ease-in-out;
+
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $bg;
+            }
+        }
+
+        &._current {
+            border: $marsala;
+            background-color: $marsala;
+            color: #fff;
+        }
+    }
+    // .pagination-catalog__link
+    &__link {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: rem(60);
+        height: rem(60);
+    }
+}
