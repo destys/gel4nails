@@ -7,10 +7,10 @@
 	align-items: center;
 	gap: rem(10);
 
-	padding: rem(20) rem(30);
+	padding: rem(12) rem(20);
 	border: 1px solid;
 
-	font-size: rem(14);
+	@include adaptiveValue("font-size", 14, 10);
 	text-transform: uppercase;
 
 	transition:
@@ -32,11 +32,15 @@
 		border-color: $marsala;
 		color: $marsala;
 
-		@media (any-hover: hover){
-			&:hover{
+		@media (any-hover: hover) {
+			&:hover {
 				background-color: $marsala;
 				color: #fff;
 			}
 		}
+	}
+
+	@media (min-width: $mobile) {
+		padding: rem(20) rem(30);
 	}
 }

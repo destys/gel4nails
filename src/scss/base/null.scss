@@ -26,13 +26,17 @@ body {
 	color: $mainColor;
 	line-height: math.div(30, 16);
 	font-family: $fontFamily;
-	font-size: $fontSize;
+	@include adaptiveValue("font-size", 18, 12);
 	//text-rendering: optimizeLegibility;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	@media (min-width: $pc) {
+		font-size: $fontSize;
+	}
 }
 input,
 button,

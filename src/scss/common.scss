@@ -1,12 +1,12 @@
 h1 {
     font-weight: 400;
     line-height: math.div(78, 58);
-    font-size: rem(58);
+    @include adaptiveValue("font-size", 58, 28);
 }
 
 h2 {
     line-height: math.div(58, 48);
-    font-size: rem(48);
+    @include adaptiveValue("font-size", 48, 24);
 }
 
 a {
@@ -26,12 +26,12 @@ img {
 }
 
 section {
-    margin-bottom: rem(120);
+    @include adaptiveValue("margin-bottom", 120, 60);
 }
 
 ._section-title {
-    margin-bottom: rem(70);
-    padding-bottom: rem(33);
+    @include adaptiveValue("margin-bottom", 70, 30);
+    @include adaptiveValue("padding-bottom", 33, 15);
     border-bottom: 1px solid $stroke;
     text-transform: uppercase;
     text-align: center;

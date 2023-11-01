@@ -8,20 +8,11 @@
     <div class="wrapper">
         @@include('html/_header.htm',{})
         <main class="page">
-            <section class="content-page">
-                <div class="content-page__container">
-                    <div class="content-page__intro intro-page">
-                        <div class="intro-page__image">
-                            <img src="@img/delivery-intro.jpg" alt="">
-                        </div>
-                        <div class="intro-page__content">
-                            <h1 class="intro-page__title">О компании</h1>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            @@include('html/_content-page.htm',{
+            "title":"О компании"
+            })
             @@include('html/_crumbs.htm',{
-            "title":"МАНИКЮР И ГАРДЕРОБ"
+            "title":"О компании"
             })
             <section class="about-info">
                 <div class="about-info__container">
@@ -83,51 +74,65 @@
             <section class="about-friends">
                 <div class="about-friends__container">
                     <h2 class="about-friends__title _section-title">Наши друзья</h2>
-                    <div class="about-friends__list">
-                        <div class="about-friends__item item-friends">
-                            <div class="item-friends__image">
-                                <img data-src="@img/friend-photo.jpg" alt="">
+                    <div class="about-friends__slider swiper">
+                        <div class="about-friends__wrapper swiper-wrapper">
+                            <div class="about-friends__item item-friends swiper-slide">
+                                <div class="item-friends__image">
+                                    <img data-src="@img/friend-photo.jpg" alt="">
+                                </div>
+                                <div class="item-friends__name">Юлия Некрасова</div>
+                                <div class="item-friends__tags">
+                                    <span>Мастер маникюра Premium</span><span>Россия</span>
+                                </div>
+                                <div class="item-friends__text">Лучшая в педикюрах, наращивании и дизайне</div>
+                                <ul class="item-friends__list">
+                                    <li>Практикующий мастер уже 13 лет</li>
+                                    <li>Инструктор курсов больше 5 лет</li>
+                                    <li>Имеет 5 международных наград</li>
+                                </ul>
                             </div>
-                            <div class="item-friends__name">Юлия Некрасова</div>
-                            <div class="item-friends__tags">
-                                <span>Мастер маникюра Premium</span><span>Россия</span>
+                            <div class="about-friends__item item-friends swiper-slide">
+                                <div class="item-friends__image">
+                                    <img data-src="@img/friend-photo.jpg" alt="">
+                                </div>
+                                <div class="item-friends__name">Юлия Некрасова</div>
+                                <div class="item-friends__tags">
+                                    <span>Мастер маникюра Premium</span><span>Россия</span>
+                                </div>
+                                <div class="item-friends__text">Лучшая в педикюрах, наращивании и дизайне</div>
+                                <ul class="item-friends__list">
+                                    <li>Практикующий мастер уже 13 лет</li>
+                                    <li>Инструктор курсов больше 5 лет</li>
+                                    <li>Имеет 5 международных наград</li>
+                                </ul>
                             </div>
-                            <div class="item-friends__text">Лучшая в педикюрах, наращивании и дизайне</div>
-                            <ul class="item-friends__list">
-                                <li>Практикующий мастер уже 13 лет</li>
-                                <li>Инструктор курсов больше 5 лет</li>
-                                <li>Имеет 5 международных наград</li>
-                            </ul>
+                            <div class="about-friends__item item-friends swiper-slide">
+                                <div class="item-friends__image">
+                                    <img data-src="@img/friend-photo.jpg" alt="">
+                                </div>
+                                <div class="item-friends__name">Юлия Некрасова</div>
+                                <div class="item-friends__tags">
+                                    <span>Мастер маникюра Premium</span><span>Россия</span>
+                                </div>
+                                <div class="item-friends__text">Лучшая в педикюрах, наращивании и дизайне</div>
+                                <ul class="item-friends__list">
+                                    <li>Практикующий мастер уже 13 лет</li>
+                                    <li>Инструктор курсов больше 5 лет</li>
+                                    <li>Имеет 5 международных наград</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="about-friends__item item-friends">
-                            <div class="item-friends__image">
-                                <img data-src="@img/friend-photo.jpg" alt="">
-                            </div>
-                            <div class="item-friends__name">Юлия Некрасова</div>
-                            <div class="item-friends__tags">
-                                <span>Мастер маникюра Premium</span><span>Россия</span>
-                            </div>
-                            <div class="item-friends__text">Лучшая в педикюрах, наращивании и дизайне</div>
-                            <ul class="item-friends__list">
-                                <li>Практикующий мастер уже 13 лет</li>
-                                <li>Инструктор курсов больше 5 лет</li>
-                                <li>Имеет 5 международных наград</li>
-                            </ul>
-                        </div>
-                        <div class="about-friends__item item-friends">
-                            <div class="item-friends__image">
-                                <img data-src="@img/friend-photo.jpg" alt="">
-                            </div>
-                            <div class="item-friends__name">Юлия Некрасова</div>
-                            <div class="item-friends__tags">
-                                <span>Мастер маникюра Premium</span><span>Россия</span>
-                            </div>
-                            <div class="item-friends__text">Лучшая в педикюрах, наращивании и дизайне</div>
-                            <ul class="item-friends__list">
-                                <li>Практикующий мастер уже 13 лет</li>
-                                <li>Инструктор курсов больше 5 лет</li>
-                                <li>Имеет 5 международных наград</li>
-                            </ul>
+                        <div class="about-friends__nav">
+                            <button type="button" class="prev">
+                                <svg>
+                                    <use xlink:href="@img/icons/icons.svg#arr-left"></use>
+                                </svg>
+                            </button>
+                            <button type="button" class="next">
+                                <svg>
+                                    <use xlink:href="@img/icons/icons.svg#arr-right"></use>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -8,24 +8,43 @@
     // .about-info__wrapper
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
         gap: rem(20);
+
+        .empty {
+            display: none;
+
+            @media (min-width: $pc) {
+                display: block;
+            }
+        }
+
+        @media (min-width: $mobile) {
+            grid-template-columns: repeat(12, 1fr);
+        }
     }
     // .about-info__image
     &__image {
         grid-column: span 8;
-        border-radius: 20px;
+        border-radius: 10px;
         overflow: hidden;
+
+        @media (min-width: $mobile) {
+            border-radius: 20px;
+        }
     }
     // .about-info__content
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        grid-column: span 3;
+        grid-column: span 4;
         padding-left: rem(23);
         border-left: 1px solid $stroke;
         height: 100%;
+
+        @media (min-width: $pc) {
+            grid-column: span 3;
+        }
     }
     // .about-info__item
     &__item {
@@ -52,11 +71,11 @@
     // .about-friends__title
     &__title {
     }
-    // .about-friends__list
-    &__list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: rem(20);
+    // .about-friends__slider
+    &__slider {
+    }
+    // .about-friends__wrapper
+    &__wrapper {
     }
     // .about-friends__item
     &__item {
@@ -68,15 +87,59 @@
         border-radius: 20px;
         background-color: $bg;
     }
+    // .about-friends__nav
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        @include adaptiveValue("margin-top", 45, 30);
+
+        .prev,
+        .next {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            flex: 0 0 rem(40);
+            width: rem(40);
+            height: rem(40);
+
+            background-color: $mainColor;
+            border-radius: 50%;
+
+            svg {
+                max-width: rem(21);
+                fill: #fff;
+            }
+
+            @media (min-width: $tablet) {
+                flex: 0 0 rem(60);
+                width: rem(60);
+                height: rem(60);
+
+                svg {
+                    max-width: rem(31);
+                }
+            }
+        }
+
+        @media (min-width:$tablet){
+             display: none; 
+        }
+    }
 }
 .item-friends {
     // .item-friends__image
     &__image {
         margin: 0 auto rem(30);
-        width: rem(200);
-        height: rem(200);
+        width: rem(140);
+        height: rem(140);
         border-radius: 50%;
         overflow: hidden;
+
+        @media (min-width: $tablet) {
+            width: rem(200);
+            height: rem(200);
+        }
     }
     // .item-friends__name
     &__name {
@@ -98,7 +161,7 @@
             background-color: $mainColor;
             border-radius: 60px;
             line-height: math.div(28, 18);
-            font-size: rem(18);
+            @include adaptiveValue("font-size", 18, 10);
             color: #fff;
 
             &:last-child {
@@ -108,10 +171,15 @@
     }
     // .item-friends__text
     &__text {
-        margin-bottom: rem(30);
+        margin-bottom: rem(22);
         line-height: math.div(28, 18);
-        font-size: rem(18);
+        font-size: rem(15);
         text-align: center;
+
+        @media (min-width: $mobile) {
+            margin-bottom: rem(30);
+            font-size: rem(18);
+        }
     }
     // .item-friends__list
     &__list {
@@ -121,10 +189,19 @@
             display: flex;
             gap: rem(15);
 
+            font-size: rem(14);
             color: $gray-text;
 
+            @media (min-width: $tablet) {
+                font-size: $fontSize;
+            }
+
             &:not(:last-child) {
-                margin-bottom: rem(20);
+                margin-bottom: rem(14);
+
+                @media (min-width: $tablet) {
+                    margin-bottom: rem(20);
+                }
             }
 
             &::before {

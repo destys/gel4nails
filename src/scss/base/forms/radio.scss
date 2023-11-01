@@ -4,14 +4,27 @@
 	align-items: flex-start;
 
 	&._colors {
-		@include gridCards("fill", rem(30), 1fr, rem(10));
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: rem(10);
 	}
 	// .options__item
 	&__item {
+		margin-bottom: em(5);
 		position: relative;
 		cursor: pointer;
-		&:not(:last-child) {
-			margin-bottom: em(5);
+
+		._colors & {
+			flex: 0 0 rem(20);
+			width: rem(20);
+			height: rem(20);
+			@media (min-width: $tablet) {
+				flex: 0 0 rem(30);
+				width: rem(30);
+				height: rem(30);
+			}
 		}
 	}
 	// .options__input
@@ -65,8 +78,9 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			width: rem(30);
-			height: rem(30);
+			flex: 0 0 rem(20);
+			width: rem(20);
+			height: rem(20);
 
 			border: 1px solid #e0e0e0;
 			border-radius: 50%;
@@ -74,6 +88,12 @@
 			&::before,
 			&::after {
 				content: none;
+			}
+
+			@media (min-width: $tablet) {
+				flex: 0 0 rem(30);
+				width: rem(30);
+				height: rem(30);
 			}
 		}
 	}
@@ -83,12 +103,17 @@
 	// .options__text
 	&__color {
 		display: block;
-		width: rem(24);
-		height: rem(24);
+		width: rem(14);
+		height: rem(14);
 		border-radius: 50%;
 
 		transform: scale(0.75);
 
 		transition: transform 0.2s ease-in-out;
+
+		@media (min-width: $mobile) {
+			width: rem(24);
+			height: rem(24);
+		}
 	}
 }

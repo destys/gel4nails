@@ -1,6 +1,6 @@
 .crumbs {
     margin-top: rem(10);
-    margin-bottom: rem(100);
+    @include adaptiveValue("margin-bottom", 100, 60);
     // .crumbs__container
     &__container {
     }
@@ -12,7 +12,7 @@
     // .crumbs__item
     &__item {
         line-height: math.div(21, 15);
-        font-size: rem(15);
+        @include adaptiveValue("font-size", 15, 12);
         color: $mainColor;
     }
     // .crumbs__link

@@ -1,18 +1,28 @@
 .callback {
-    margin: 0 rem(15) rem(20);
+    margin: 0 rem(5) rem(20);
 
     background: url("@img/callback-image.jpg") 0 0 no-repeat;
     border-radius: 20px;
     overflow: hidden;
     color: #fff;
 
+    @media (min-width: $mobile) {
+        margin: 0 rem(15) rem(20);
+    }
+
     // .callback__container
     &__container {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 0 rem(30);
         max-width: rem(904);
-        height: rem(462);
+        height: rem(323);
+
+        @media (min-width: $mobile) {
+            height: rem(462);
+            padding: 0;
+        }
     }
     // .callback__block
     &__block {
@@ -22,15 +32,20 @@
     }
     // .callback__title
     &__title {
-        margin-bottom: rem(18);
+        @include adaptiveValue("margin-bottom", 18, 5);
         line-height: math.div(78, 58);
-        font-size: rem(58);
+        @include adaptiveValue("font-size", 58, 28);
         text-transform: uppercase;
         text-align: center;
     }
     // .callback__subtitle
     &__subtitle {
-        margin-bottom: rem(55);
+        @include adaptiveValue("margin-bottom", 55, 30);
+        text-align: center;
+
+        @media (min-width: $mobile) {
+            text-align: left;
+        }
     }
     // .callback__button
     &__button {

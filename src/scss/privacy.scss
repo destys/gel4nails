@@ -1,0 +1,38 @@
+.privacy {
+    // .privacy__container
+    &__container {
+    }
+    // .privacy__title
+    &__title {
+        text-align: center;
+    }
+    // .privacy__content
+    &__content {
+        margin: 0 auto;
+        max-width: rem(870);
+    }
+    // .privacy__item
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: rem(45);
+        }
+
+        h2 {
+            @extend %h6;
+            margin-bottom: rem(20);
+
+            span {
+                text-transform: uppercase;
+                &:first-child {
+                    color: $marsala;
+                }
+            }
+        }
+
+        ul {
+            li {
+                list-style: inside;
+            }
+        }
+    }
+}

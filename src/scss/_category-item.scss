@@ -31,7 +31,7 @@
 
         line-height: math.div(42, 22);
         font-weight: 400;
-        font-size: rem(22);
+        @include adaptiveValue("font-size", 22, 18);
         text-align: center;
         text-transform: uppercase;
     }
