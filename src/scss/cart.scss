@@ -30,7 +30,6 @@
     &__item {
         display: flex;
         flex-direction: column;
-        align-items: center;
 
         padding: rem(10);
 
@@ -45,6 +44,7 @@
 
         @media (min-width: $tablet) {
             flex-direction: row;
+            align-items: center;
         }
 
         @media (min-width: $tablet) {
@@ -129,6 +129,7 @@
 
         @media (min-width: $tablet) {
             margin-bottom: 0;
+            display: block;
         }
     }
     // .item-cart__price
@@ -204,6 +205,10 @@
 
         width: rem(18);
         height: rem(18);
+
+        @media (min-width:$tablet){
+             position: static; 
+        }
     }
 }
 .actions-cart {

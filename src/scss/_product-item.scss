@@ -72,25 +72,32 @@
         @media (min-width: $tablet) {
             flex-direction: row;
             justify-content: space-between;
-            align-items: flex-end;
+            align-items: center;
         }
     }
 }
 .footer-product {
     // .footer-product__price
     &__price {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: rem(10);
         .price {
             font-weight: 500;
-            @include adaptiveValue("font-size", 32, 20);
+            @include adaptiveValue("font-size", 28, 20);
             white-space: nowrap;
+            line-height: 1;
+            text-align: left;
         }
         .old-price {
             @extend %h6;
             margin-left: rem(20);
-            @include adaptiveValue("margin-left", 20, 10);
             color: $stroke;
             position: relative;
+            line-height: 1;
             white-space: nowrap;
+            text-align: left;
 
             &::after {
                 content: "";
@@ -112,6 +119,10 @@
             &:hover {
                 color: #fff;
             }
+        }
+
+        @media (min-width: $tablet) {
+            max-width: rem(182);
         }
     }
 }
