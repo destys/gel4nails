@@ -173,11 +173,11 @@
 
 	font-weight: 500;
 	line-height: 1;
-	font-size: rem(32);
+	@include adaptiveValue("font-size", 32, 20);
 	white-space: nowrap;
 
 	del {
-		font-size: rem(22);
+		@include adaptiveValue("font-size", 22, 14);
 		color: $stroke;
 		text-decoration: none;
 		position: relative;

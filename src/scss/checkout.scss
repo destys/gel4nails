@@ -23,7 +23,7 @@
         @extend %h4;
         display: flex;
         gap: rem(15);
-        margin-bottom: rem(45);
+        @include adaptiveValue("margin-bottom", 45, 26);
         text-transform: uppercase;
         span {
             &:first-child {
@@ -33,7 +33,7 @@
     }
     // .checkout__payment-type
     &__payment-type {
-        margin-bottom: rem(45);
+        @include adaptiveValue("margin-bottom", 45, 26);
         flex-direction: row;
         gap: rem(10);
         .options {
@@ -49,13 +49,17 @@
             }
             // .options__label
             &__label {
-                padding: rem(7) rem(25);
+                padding: rem(7) rem(18);
                 border: 1px solid $marsala;
                 border-radius: 60px;
 
                 &::before,
                 &::after {
                     content: none;
+                }
+
+                @media (min-width: $mobile) {
+                    padding: rem(7) rem(25);
                 }
             }
             // .options__color
@@ -69,13 +73,21 @@
     // .checkout__rows
     &__rows {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: rem(10);
 
         margin-bottom: rem(45);
 
         .select {
-            grid-column: span 4;
+            grid-column: span 2;
+
+            @media (min-width: $mobileSmall) {
+                grid-column: span 4;
+            }
+        }
+
+        @media (min-width: $mobileSmall) {
+            grid-template-columns: repeat(4, 1fr);
         }
     }
     // .checkout__step-actions
@@ -89,12 +101,18 @@
             display: flex;
             align-items: center;
             gap: rem(10);
-            padding: rem(20) rem(30);
+            padding: rem(12) rem(17);
 
             line-height: math.div(26, 14);
             font-size: rem(14);
+            line-height: 1;
             letter-spacing: 1.4px;
             text-transform: uppercase;
+            @include adaptiveValue("font-size", 18, 10);
+
+            @media (min-width:$mobile){
+                 padding: rem(20) rem(30); 
+            }
         }
         .prev {
             padding-left: 0;
@@ -114,7 +132,11 @@
         // .form__row
         &__row {
             &._fw {
-                grid-column: span 4;
+                grid-column: span 2;
+
+                @media (min-width: $mobileSmall) {
+                    grid-column: span 4;
+                }
             }
 
             .input {

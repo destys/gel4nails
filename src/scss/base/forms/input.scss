@@ -12,11 +12,18 @@ textarea {
 	border-radius: 5px;
 	width: 100%;
 	display: block;
-	padding: rem(20);
+	padding: rem(15);
 	border: 1px solid $stroke;
+	line-height: 1;
+	font-size: rem(14);
 	&._form-focus {
 	}
 	&._form-error {
+	}
+
+	@media (min-width: $tablet) {
+		padding: rem(20);
+		font-size: $fontSize;
 	}
 }
 .input[placeholder]:not([data-placeholder-nohiden]) {
