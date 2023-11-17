@@ -149,6 +149,13 @@
 						}
 					}
 				}
+				// ._accent
+				&._accent {
+					a {
+						color: $marsala !important;
+						text-decoration: underline;
+					}
+				}
 			}
 			// .menu__link
 			&__link {
@@ -159,6 +166,7 @@
 				.home ._header-scroll & {
 					color: $mainColor;
 				}
+
 				@media (any-hover: hover) {
 					&:hover {
 						color: $marsala !important;
