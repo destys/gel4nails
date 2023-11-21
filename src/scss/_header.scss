@@ -151,9 +151,12 @@
 				}
 				// ._accent
 				&._accent {
+					padding: rem(5) rem(15);
+					background-color: $marsala;
+					border-radius: 12px;
+
 					a {
-						color: $marsala !important;
-						text-decoration: underline;
+						color: #fff !important;
 					}
 				}
 			}
