@@ -1,6 +1,18 @@
 .product-item {
+    position: relative;
     // .product-item__flags
     &__flags {
+        position: absolute;
+        top: rem(20);
+        left: rem(20);
+        z-index: 2;
+
+        padding: rem(4) rem(10);
+        background-color: $marsala;
+        border-radius: 60px;
+        font-weight: 300;
+        @include adaptiveValue("font-size", 18, 14);
+        color: #fff;
     }
     // .product-item__slider
     &__slider {
@@ -80,24 +92,31 @@
     // .footer-product__price
     &__price {
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: rem(10);
-        .price {
+        flex-direction: column;
+        gap: rem(5);
+        .price,
+        bdi,
+        ins {
             font-weight: 500;
             @include adaptiveValue("font-size", 28, 20);
             white-space: nowrap;
             line-height: 1;
             text-align: left;
+            text-decoration: none;
         }
-        .old-price {
+        .old-price,
+        del {
             @extend %h6;
-            margin-left: rem(20);
             color: $stroke;
             position: relative;
             line-height: 1;
             white-space: nowrap;
             text-align: left;
+            text-decoration: none;
+
+            bdi {
+                @extend %h6;
+            }
 
             &::after {
                 content: "";
