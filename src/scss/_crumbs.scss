@@ -20,8 +20,8 @@
         color: $stroke;
         position: relative;
 
-        @media (any-hover: hover){
-            &:hover{
+        @media (any-hover: hover) {
+            &:hover {
                 color: $marsala;
             }
         }
@@ -38,6 +38,42 @@
             transform: translateY(-50%);
 
             background-color: $marsala;
+        }
+    }
+
+    &.yoast_breadcrumb {
+        .crumbs__container > span {
+            display: flex;
+            gap: rem(30);
+            span {
+                line-height: math.div(21, 15);
+                @include adaptiveValue("font-size", 15, 12);
+                color: $mainColor;
+            }
+            a {
+                color: $stroke;
+                position: relative;
+
+                @media (any-hover: hover) {
+                    &:hover {
+                        color: $marsala;
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    width: rem(13);
+                    height: rem(1);
+
+                    position: absolute;
+                    top: 50%;
+                    right: rem(-21);
+                    z-index: 1;
+                    transform: translateY(-50%);
+
+                    background-color: $marsala;
+                }
+            }
         }
     }
 }

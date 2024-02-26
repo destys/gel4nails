@@ -32,15 +32,15 @@ export const path = {
 	rootFolder: rootFolder,
 	srcFolder: srcFolder,
 	// Шлях до потрібної папки на віддаленому сервері.
-	ftp: `/dessty6z.beget.tech/public_html/wp-content/themes/gell4nails/build`
+	ftp: `/wordpress_i1ww3/public_html/wp-content/themes/gell4nails/build`
 	// Приклад: завантажити в папку 2022 далі в папку з назвою проєкту
 	// ftp: `2022/${rootFolder}`
 };
 
 // Налаштування FTP з'єднання
 export const configFTP = {
-	host: "dessty6z.beget.tech", // Адреса FTP сервера
-	user: "dessty6z_danil", // Ім'я користувача
-	password: "5l*82nxO", // Пароль
+	host: "188.225.40.140", // Адреса FTP сервера
+	user: "cz20207_somedev", // Ім'я користувача
+	password: "mordor011", // Пароль
 	parallel: 5 // Кількість одночасних потоків
 }

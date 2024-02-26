@@ -21,7 +21,8 @@
     // .why__item
     &__item {
         @media (min-width: $tablet) {
-            &:nth-child(even) {
+            &:nth-child(2),
+            &:nth-child(5) {
                 @include adaptiveValue("margin-top", 120, 60, 0, 1800, 992);
             }
         }

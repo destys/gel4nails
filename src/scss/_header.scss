@@ -10,10 +10,12 @@
 
 	transition: background 0.2s ease-in-out;
 
-	.home & {
+	.page-template &,
+	.page-template-default {
 		background-color: transparent;
 	}
-	.home &._header-scroll,
+	.page-template &._header-scroll,
+	.page-template-default &._header-scroll,
 	&._header-scroll {
 		background-color: $bg;
 	}
@@ -50,7 +52,8 @@
 	&__logo {
 		&._white {
 			display: block;
-			.home & {
+			.page-template &,
+			.page-template-default & {
 				display: none;
 			}
 			._header-scroll & {
@@ -64,7 +67,8 @@
 
 		&._dark {
 			display: none;
-			.home & {
+			.page-template &,
+			.page-template-default & {
 				display: block;
 			}
 			._header-scroll & {
@@ -124,14 +128,16 @@
 								top: 65%;
 							}
 
-							.home & {
+							.page-template &,
+							.page-template-default & {
 								&::before,
 								&::after {
 									background: #fff;
 								}
 							}
 
-							.home ._header-scroll & {
+							.page-template ._header-scroll &,
+							.page-template-default ._header-scroll & {
 								&::before,
 								&::after {
 									background: $mainColor;
@@ -163,10 +169,12 @@
 			// .menu__link
 			&__link {
 				@include adaptiveValue("font-size", 18, 14, 0, 1920, 991);
-				.home & {
+				.page-template &,
+				.page-template-default & {
 					color: #fff;
 				}
-				.home ._header-scroll & {
+				.page-template ._header-scroll &,
+				.page-template-default ._header-scroll & {
 					color: $mainColor;
 				}
 
@@ -206,13 +214,15 @@
 
 		transition: background 0.2s ease-in-out;
 
-		.home & {
+		.page-template &,
+		.page-template-default & {
 			svg {
 				fill: #fff;
 			}
 		}
 
-		.home ._header-scroll & {
+		.page-template ._header-scroll &,
+		.page-template-default ._header-scroll & {
 			svg {
 				fill: $mainColor;
 			}
@@ -248,7 +258,8 @@
 		width: rem(20);
 		height: rem(20);
 
-		.home & {
+		.page-template &,
+		.page-template-default & {
 			&:first-child {
 				path {
 					&:first-child {
@@ -266,7 +277,8 @@
 			}
 		}
 
-		.home ._header-scroll & {
+		.page-template ._header-scroll &,
+		.page-template-default ._header-scroll & {
 			&:first-child {
 				path {
 					&:first-child {
@@ -290,11 +302,13 @@
 
 		line-height: math.div(26, 16);
 
-		.home & {
+		.page-template &,
+		.page-template-default & {
 			color: #fff;
 		}
 
-		.home ._header-scroll & {
+		.page-template ._header-scroll &,
+		.page-template-default ._header-scroll & {
 			color: $mainColor;
 		}
 	}
@@ -304,11 +318,13 @@
 		text-align: right;
 		color: $gray-text;
 
-		.home & {
+		.page-template &,
+		.page-template-default & {
 			color: $stroke;
 		}
 
-		.home ._header-scroll & {
+		.page-template ._header-scroll &,
+		.page-template-default ._header-scroll & {
 			color: $gray-text;
 		}
 	}
@@ -436,7 +452,8 @@
 			height: rem(2);
 			background-color: #000;
 
-			.home & {
+			.page-template &,
+			.page-template-default & {
 				background-color: #fff;
 			}
 

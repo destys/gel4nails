@@ -14,7 +14,7 @@
     }
     &:nth-child(2),
     &:nth-child(3),
-    &:last-child {
+    &:nth-child(6) {
         .blog-item__image {
             order: 2;
             border-radius: 0 0 20px 20px;
@@ -32,7 +32,7 @@
         }
     }
 
-    &:last-child {
+    &:nth-child(6) {
         grid-column: span 2;
         .blog-item__image {
             order: 2;

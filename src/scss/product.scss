@@ -319,6 +319,8 @@
     &__price {
         margin-bottom: rem(45);
         @extend %price;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
     }
     // .right-product__sku
     &__sku {
